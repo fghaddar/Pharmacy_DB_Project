@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="/form.css" rel="stylesheet">
+</head>
+
+<body>
+      <form action = "/pharmacy" method = "GET">
+      
+      <h1>Pharmacy Drug Report</h1>
+      
+      <p>Enter a drug name or partial name and date range below.</p>
+ 
+      <section>
+      <p>
+         <label for="pharmacyID">
+           <span>Pharmacy ID: </span>
+         </label>
+         <input type="text" id="pharmacyID" name="pharmacyID" />
+      </p>
+      <p>
+         <label for="drug">
+           <span>Drug: </span>
+         </label>
+         <input type="text" id="drug" name="drug" />
+      </p>
+      <p>
+         <label for="start">
+           <span>Start date </span>
+         </label>
+         <input type="date" id="start" name="startDate" />
+      </p>
+       <p>
+         <label for="end">
+           <span>End date </span>
+         </label>
+         <input type="date" id="end" name="endDate" />
+      </p>
+       
+      </section>
+        
+      <p> <button type="submit">Search</button> </p>
+      </form>
+ </body>
+</html>

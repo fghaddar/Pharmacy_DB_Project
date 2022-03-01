@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org">
+   <body>
+     <h1>Pharmacy usage of drugs by drugname.</h1>
+      
+         <p>Pharmacy: <span th:text="${pharmacyID}"></span></p>
+         <p>Start Date: <span th:text="${startDate}"></span></p>
+         <p>End Date: <span th:text="${endDate}"></span></p>
+         
+        <table>
+		<tr>
+			<th>Drug</th>
+			<th>Quantity Used</th>
+		</tr>
+		<div th:each="d : ${report}">
+			<tr>
+				<td th:inline="text">[[${d.name}]]</td>
+				<td th:inline="text">[[${d.quantity}]]</td>
+			</tr>
+		</div>
+	</table>
+        
+      
+   </body>
+</html>
